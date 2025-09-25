@@ -1,0 +1,7 @@
+{
+  "name": "soutoura-frontend",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
