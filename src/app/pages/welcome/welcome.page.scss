@@ -1,85 +1,111 @@
-ion-content {
-  --background: #ffffff;
-}
-
 .container {
+  position: relative;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: space-between;
-  height: 100%;
 }
 
-/* Cercle orange */
-.circle-container {
-  margin-top: 40px;
-  width: 220px;
-  height: 220px;
+/* Grand cercle orange */
+.big-circle {
+  position: absolute;
+  top: 12%;
+  width: 350px;
+  height: 350px;
+  background: #E67E22;
   border-radius: 50%;
-  background: #e67e22;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 3;
 }
 
 .sac-img {
-  width: 140px;
+  width: 340px;
   height: auto;
 }
 
-/* Pagination */
+/* Section arrondie orange */
+.card-orange {
+  width: 100%;
+  height: 46%;
+  background: #E67E22;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  display: flex;
+  // justify-content: center;
+  z-index: 1;
+}
+
+/* Section arrondie bleue */
+.card-blue {
+  width: 100%;
+  height: auto;
+  background: #063854;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  // padding: 40px 20px;
+  color: white;
+  // text-align: center;
+  margin-top: 5%;/* chevauchement */
+  z-index: 2;
+}
+
+.bas {
+  margin-top: 6%;
+}
+
+/* Points de progression */
 .dots {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
-
-  .dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #ccc;
-    margin: 0 5px;
-
-    &.active {
-      background: #000;
-    }
-  }
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
-/* Section du bas */
-.bottom-section {
-  background: #063854;
-  width: 100%;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  padding: 30px 20px;
+.dot {
+  width: 17px;
+  height: 17px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.dot.active {
+  width: 25px;
+  height: 25px;
+  background: #E67E22;
+}
+
+/* Titres */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10%;
   text-align: center;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-top: 10%;
   color: #fff;
+  text-align: center;
+}
 
-  h2 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+/* Bouton flèche */
+.next-btn {
+  width: 60px;
+  height: 60px;
+  background: #E67E22;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 8%;
+}
 
-  p {
-    font-size: 14px;
-    opacity: 0.8;
-    margin-bottom: 20px;
-  }
-
-  .next-btn {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #e67e22;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    ion-icon {
-      color: #fff;
-      font-size: 24px;
-    }
-  }
+.next-btn ion-icon {
+  font-size: 28px;
+  color: white;
 }

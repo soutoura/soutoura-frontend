@@ -1,13 +1,118 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>accueil</ion-title>
+    <ion-title>Accueil</ion-title>
+    <ion-buttons slot="end">
+      <!-- Notifications -->
+      <ion-button fill="clear">
+        <ion-icon src="assets/129_251.svg" slot="icon-only"></ion-icon>
+        <ion-icon src="assets/129_290.svg" class="notification-dot"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">accueil</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+
+  <!-- Profil utilisateur -->
+  <ion-card>
+    <ion-item lines="none">
+      <ion-avatar slot="start">
+        <img src="assets/129_256.svg" alt="Rama Konaré">
+      </ion-avatar>
+      <ion-label>
+        <h2>Rama Konaré</h2>
+        <p class="user-status">Compte désactivé</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+  <!-- Alerte -->
+  <ion-card color="warning">
+    <ion-item lines="none">
+      <ion-icon src="assets/133_580.svg" slot="start"></ion-icon>
+      <ion-label>
+        Votre compte est actuellement désactivé.<br />
+        Pour parrainer un enfant, veuillez contacter une école pour activer votre compte.
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+  <!-- Associations -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Associations disponibles</ion-card-title>
+      <ion-buttons slot="end">
+        <ion-button fill="clear" size="small">
+          Voir tout
+          <ion-icon src="assets/133_94.svg" slot="end"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <!-- Exemple association -->
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img src="assets/a7d558dc0223ef58f6ff9d483952d3e7723e4442.png" />
+          </ion-thumbnail>
+          <ion-label>
+            <h3>Ecole Primaire</h3>
+            <p>Kankou-Moussa</p>
+            <p>Bamako</p>
+          </ion-label>
+          <ion-button slot="end" color="primary">Contacter</ion-button>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img src="assets/e5efc270ed2231a3111a7aaa3a359897fe02e242.png" />
+          </ion-thumbnail>
+          <ion-label>
+            <h3>Ecole Primaire</h3>
+            <p>Kankou-Moussa</p>
+            <p>Bamako</p>
+          </ion-label>
+          <ion-button slot="end" color="primary">Contacter</ion-button>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img src="assets/76f9ef4e942acf13dc93d85b09497b2c9fb6e032.png" />
+          </ion-thumbnail>
+          <ion-label>
+            <h3>Ecole Primaire</h3>
+            <p>Kankou-Moussa</p>
+            <p>Bamako</p>
+          </ion-label>
+          <ion-button slot="end" color="primary">Contacter</ion-button>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+
+<!-- Footer -->
+<ion-footer>
+  <ion-toolbar>
+    <ion-segment value="profile">
+      <ion-segment-button value="profile">
+        <ion-icon src="assets/509_982.svg"></ion-icon>
+        <ion-label>Accueil</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="parrainages">
+        <ion-icon src="assets/509_976.svg"></ion-icon>
+        <ion-label>MesParrainages</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="associations">
+        <ion-icon src="assets/I509_977_129_276.svg"></ion-icon>
+        <ion-label>Association</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="paiements">
+        <ion-icon src="assets/168_222.svg"></ion-icon>
+        <ion-label>Paiements</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-footer>
+

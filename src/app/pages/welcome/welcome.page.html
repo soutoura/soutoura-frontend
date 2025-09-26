@@ -1,26 +1,38 @@
-<ion-content fullscreen>
+<ion-content [fullscreen]="true">
   <div class="container">
-    <!-- Cercle orange avec image -->
-    <div class="circle-container">
-      <img src="assets/img/sac.png" alt="Sac scolaire" class="sac-img" />
+
+    <!-- Grand cercle orange avec l'image -->
+    <div class="big-circle">
+      <img src="assets/sac.png" alt="Sac" class="sac-img" />
     </div>
 
-    <!-- Pagination -->
-    <div class="dots">
-      <div class="dot active"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-    </div>
+    <!-- Section arrondie orange -->
+    <div class="card-orange">
+      <!-- Section arrondie bleue -->
+      <div class="card-blue">
+    <div class="bas">
+        <!-- Indicateurs de progression -->
+        <div class="dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
 
-    <!-- Section texte avec fond bleu -->
-    <div class="bottom-section">
-      <h2>Avec Soutoura, votre geste change une vie</h2>
-      <p>Devenez le soutien qui ouvre les portes du savoir.</p>
+        <!-- Textes -->
+        <h2 class="title">
+          Avec Soutoura, votre geste change une vie
+        </h2>
+        <p class="subtitle">
+          Devenez le soutien qui ouvre les portes du savoir.
+        </p>
 
-      <!-- Bouton flèche -->
-      <div class="next-btn">
-        <ion-icon name="arrow-forward-outline"></ion-icon>
+        <!-- Bouton flèche -->
+        <div class="next-btn">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
+        </div>
       </div>
     </div>
   </div>
+
 </ion-content>

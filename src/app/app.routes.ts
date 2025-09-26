@@ -26,5 +26,13 @@ export const routes: Routes = [
     path: 'welcome',
     loadComponent: () => import('./pages/welcome/welcome.page').then( m => m.WelcomePage)
   },
+  {
+    path: 'welcometwo',
+    loadComponent: () => import('./pages/welcometwo/welcometwo.page').then( m => m.WelcometwoPage)
+  },
+  {
+    path: 'tableaudebord',
+    loadComponent: () => import('./pages/tableaudebord/tableaudebord.page').then( m => m.TableaudebordPage)
+  },
 
 ];
