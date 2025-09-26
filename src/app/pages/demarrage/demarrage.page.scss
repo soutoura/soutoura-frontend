@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.splash-container {
+  position: relative;
+  width: 393px;
+  height: 852px;
+  max-width: 393px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.loader-1 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  /* Centrage parfait */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+  /* For mobile devices, make the splash screen take up the full viewport */
+  @media (max-width: 430px) {
+    body {
+      background-color: #ffffff; /* Match splash screen background */
+    }
+    .splash-container {
+      width: 100%;
+      height: 100vh;
+      border-radius: 0;
+      margin: 0;
+    }
+  }
