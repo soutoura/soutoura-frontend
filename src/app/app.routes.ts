@@ -7,12 +7,32 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'menu',
     pathMatch: 'full',
+  },
+  {
+    path: 'header',
+    loadComponent: ()=> import('./components/header/header.component')
+    .then(m=>m.HeaderComponent)
+  },
+  {
+    path: 'menu',
+    loadComponent: ()=> import("./components/menu/menu.component")
+    .then(m=>m.MenuComponent)
   },
   {
     path: 'login',
     loadComponent: () => import('./pages/login/login.page').then( m => m.LoginPage)
+  },
+  {
+    path: 'passwordforget',
+    loadComponent: ()=> import('./pages/passwordforget/passwordforget.page')
+    .then( m => m.PasswordforgetPage)
+  },
+  {
+    path: 'inscription',
+    loadComponent: ()=> import("./pages/inscription/inscription.page")
+    .then(m=>m.InscriptionPage)
   },
   {
     path: 'accueil',
@@ -26,5 +46,13 @@ export const routes: Routes = [
     path: 'welcome',
     loadComponent: () => import('./pages/welcome/welcome.page').then( m => m.WelcomePage)
   },
+  {
+    path: 'passwordforget',
+    loadComponent: () => import('./pages/passwordforget/passwordforget.page').then( m => m.PasswordforgetPage)
+  },
+  
+  
+
+
 
 ];
