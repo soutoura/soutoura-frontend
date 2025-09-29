@@ -3,8 +3,10 @@
     <ion-title></ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content class="ion-padding">
+  <div class="container">
+  <img src="assets/Group 637 (1).png" alt="Image" class="image-haut-droite">
+</div>
+<ion-content class="ion-padding-top">
   <h2>Se connecter</h2>
   <div class="logo-container">
     <ion-img src="assets/Logo-soutoura.png"
@@ -16,7 +18,7 @@
       <ion-button   class="google-btn" expand="block"
    (click)="loginWithGoogle()">
 
-    <ion-icon name="logo-google"></ion-icon>
+     <img src="assets/google-logo.png" alt="Google" class="google-logo" />
 
     
     Connectez-vous avec Google
@@ -28,13 +30,13 @@
     <ion-icon slot="start" name="mail-outline"  class="icons">
 
     </ion-icon>
-    <ion-input type="email" [(ngModel)]="email"></ion-input>
+    <ion-input type="email" [(ngModel)]="email" placeholder="Saisissez votre email"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-icon slot="start" name="lock-closed-outline"
       class="icons"></ion-icon>
-    <ion-input type="password" [(ngModel)]="password"></ion-input>
+    <ion-input type="password" [(ngModel)]="password" placeholder="Saisissez votre mot de passe"></ion-input>
     <ion-icon slot="end" name="eye-off-outline"  class="icons"></ion-icon>
   </ion-item>
   <p class="password-forget"><a (click)="createAccount()">Mot de passe oublié?</a></p>
@@ -45,5 +47,10 @@
 
   <p class="signup-text">Nouveau ici ? <a (click)="createAccount()">Créer un compte</a></p>
   </div>
-  
+
+ 
+
 </ion-content>
+ <div class="container_2">
+  <img src="assets/Group 967 (1).png" alt="Image" class="image-bas-gauche">
+</div>
