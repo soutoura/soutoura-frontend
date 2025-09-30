@@ -1,8 +1,14 @@
-<ion-header>
-  <ion-toolbar>
-      <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="start">
+      <!-- retour vers la page precedente -->
+      <ion-back-button icon="chevron-back-outline" defaultHref="/home"></ion-back-button>
     </ion-buttons>
-    <ion-title>Bonjour header</ion-title>
+    <ion-title>{{titre}}</ion-title>
   </ion-toolbar>
 </ion-header>
+
+<ion-content class="ion-padding-top">
+  <!-- ton contenu ici -->
+</ion-content>
+
