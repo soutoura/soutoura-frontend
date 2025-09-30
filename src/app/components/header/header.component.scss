@@ -1,8 +1,26 @@
 ion-header{
-    --background: blue;
-    color: white;
-    margin-top: 35px;
+    background: #063854;
+    margin-top: 50px;
+    
+     padding-top: env(safe-area-inset-top);
+}
+/* Toolbar fixe, couleur personnalisée */
+.toolbar {
+  --background: #063854; /* couleur principale du header */
+  color: white; 
+   display: flex;
+  justify-content: center;
+  align-items: center;          /* couleur du texte et icône */
+  height: 80px;
 }
 ion-title{
-    text-align: center;
+    font-weight: 700;
+    font-size: 1.5em;
 }
+/* Ajustement du back-button */
+ion-back-button {
+  font-size: 1.2rem; /* taille de l'icône */
+  color: white;       /* couleur de l'icône */
+}
+
+

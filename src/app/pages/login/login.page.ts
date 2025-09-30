@@ -8,13 +8,14 @@ import {
 import {
   addIcons
 } from "ionicons";
+import { HeaderComponent } from "src/app/components/header/header.component";
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
   standalone: true,
-  imports: [IonImg, IonInput, IonItem, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonButton, IonIcon]
+  imports: [IonImg, IonInput, IonItem, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonButton, IonIcon, HeaderComponent]
 })
 export class LoginPage implements OnInit {
 createAccount() {
