@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-toolbar>
+    
+  </ion-toolbar>
+</ion-header>
+
+
+ 
+<ion-content fullscreen="true">
+  <div class="container_1">
+  <img src="assets/Group 637 (2).png" alt="Image" class="image-haut">
+</div>
+  <h2>S'inscrire</h2>
+  <div class="logo-container">
+    <ion-img src="assets/Logo-soutoura.png"
+    alt="logo"
+    ></ion-img>
+  </div>
+
+  <div class="main-div">
+    <ion-button   class="google-btn" expand="block"
+   (click)="loginWithGoogle()">
+
+     <img src="assets/google-logo.png" alt="Google" class="google-logo" />
+
+    
+    Connectez-vous avec Google
+  </ion-button>
+  <p style="font-weight: bold; font-size: 1.2em;">Ou</p>
+
+  <div class="nom-prenom">
+    <ion-item id="nom">
+    <ion-input [(ngModel)]="nom" placeholder="Nom"></ion-input>
+  </ion-item>
+   <ion-item id="prenom">
+    <ion-input [(ngModel)]="prenom" placeholder="Prenom"></ion-input>
+  </ion-item>
+  </div>
+   <ion-item>
+  <ion-label>Genre</ion-label>
+  <ion-radio-group [(ngModel)]="genre">
+    <ion-item>
+      <ion-label>Homme</ion-label>
+      <ion-radio slot="start" value="homme"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Femme</ion-label>
+      <ion-radio slot="start" value="femme"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-item>
+  <ion-item>
+    <ion-input type="email" [(ngModel)]="email" placeholder="Email">
+      
+    </ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="password" [(ngModel)]="password" placeholder="Mot de passe">
+      
+    </ion-input>
+  </ion-item>
+
+   <ion-item>
+  <ion-label>Role</ion-label>
+  <ion-select [(ngModel)]="role" placeholder="Sélectionnez un rôle">
+    <ion-select-option value="ASSOCIATION">Association</ion-select-option>
+    <ion-select-option value="PARRAIN">Parrain</ion-select-option>
+   
+  </ion-select>
+</ion-item>
+
+   <ion-item>
+    <ion-input  [(ngModel)]="pays" placeholder="Pays">
+      
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="tel" [(ngModel)]="tel" placeholder="Telephone">
+
+    </ion-input>
+  </ion-item>
+
+   <ion-button expand="block" (click)="Inscription()" class="inscription">
+    S'inscrire
+  </ion-button>
+
+   <p class="signup-text">Vous avez déjà un compte ? <a (click)="Login()">Connectez-vous ici</a></p>
+  
+  </div>
+  
+</ion-content>
