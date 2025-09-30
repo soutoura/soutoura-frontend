@@ -1,0 +1,136 @@
+<ion-header class="app-header">
+  <ion-toolbar>
+    <!-- Logo -->
+    <div class="logo-container">
+      <ion-img src="assets/img/logo-bg.png" class="logo-bg"></ion-img>
+      <ion-img src="assets/img/logo-icon.svg" class="logo-icon"></ion-img>
+    </div>
+
+    <!-- Titre -->
+    <ion-title>Accueil</ion-title>
+
+    <!-- Notifications -->
+    <ion-buttons slot="end">
+      <ion-button fill="clear" class="notification-button">
+        <div class="notification-icon-wrapper">
+          <ion-img src="assets/img/notification-bell.svg" class="notification-bell"></ion-img>
+          <ion-img src="assets/img/notification-dot.svg" class="notification-dot"></ion-img>
+        </div>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="main-content">
+  <!-- Profile -->
+  <div class="profile-section">
+    <ion-avatar>
+      <img src="assets/img/profile.svg" alt="Avatar">
+    </ion-avatar>
+    <div class="profile-info">
+      <p class="profile-name">Rama Konaré</p>
+      <p class="welcome-message">Bienvenue !</p>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-container">
+    <ion-card class="stat-card">
+      <ion-card-content>
+        <span class="stat-number">1</span>
+        <p class="stat-label">Enfants parrainés</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="stat-card">
+      <ion-card-content>
+        <span class="stat-number">2</span>
+        <p class="stat-label">Années de parrainage</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <!-- Filleule -->
+  <div class="sponsored-child-section">
+    <h2 class="section-title">Votre filleule</h2>
+    <ion-card class="child-card">
+      <ion-card-content class="child-info">
+        <p class="child-name-label">Enfants parrainés</p>
+        <p class="child-name">Sitan</p>
+        <a href="#" class="profile-link">Voir profil</a>
+      </ion-card-content>
+      <ion-avatar slot="end">
+        <img src="assets/img/child-avatar.svg" alt="Child avatar">
+      </ion-avatar>
+    </ion-card>
+  </div>
+
+  <!-- Rapports & Actions -->
+  <div class="reports-actions-section">
+    <h2 class="section-title">Rapports & Actions</h2>
+    <div class="actions-grid">
+      <ion-card class="action-card">
+        <ion-card-content>
+          <div class="icon-wrapper">
+            <ion-img src="assets/img/school-bg.svg" class="icon-bg"></ion-img>
+            <ion-img src="assets/img/school-icon.svg" class="icon-fg"></ion-img>
+          </div>
+          <p>Rapport scolaire</p>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="action-card">
+        <ion-card-content>
+          <div class="icon-wrapper">
+            <ion-img src="assets/img/finance-bg.svg" class="icon-bg"></ion-img>
+            <ion-img src="assets/img/finance-icon.svg" class="icon-fg"></ion-img>
+          </div>
+          <p>Rapport financier</p>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="action-card">
+        <ion-card-content>
+          <div class="icon-wrapper">
+            <ion-img src="assets/img/add-bg.svg" class="icon-bg"></ion-img>
+            <ion-img src="assets/img/add-icon.svg" class="icon-fg"></ion-img>
+          </div>
+          <p>Nouveau Parrainage</p>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="action-card">
+        <ion-card-content>
+          <div class="icon-wrapper">
+            <ion-img src="assets/img/payment-bg.svg" class="icon-bg"></ion-img>
+            <ion-img src="assets/img/payment-icon.svg" class="icon-fg"></ion-img>
+          </div>
+          <p>Gérer les paiements</p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>
+
+<!-- Footer -->
+<ion-footer>
+  <ion-toolbar>
+    <ion-segment value="home">
+      <ion-segment-button value="home">
+        <ion-icon src="assets/img/home.svg"></ion-icon>
+        <ion-label>Accueil</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="children">
+        <ion-icon src="assets/img/children.svg"></ion-icon>
+        <ion-label>Enfants</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="association">
+        <ion-icon src="assets/img/association.svg"></ion-icon>
+        <ion-label>Association</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="payments">
+        <ion-icon src="assets/img/payment.svg"></ion-icon>
+        <ion-label>Paiements</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-footer>

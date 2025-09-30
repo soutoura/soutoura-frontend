@@ -8,22 +8,18 @@
 }
 
 /* Grand cercle orange */
-.big-circle {
-  position: absolute;
-  top: 12%;
-  width: 350px;
-  height: 350px;
-  background: #E67E22;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 3;
+.img-fond {
+position: absolute;
+display: flex;
+top: 15%;
+z-index: 3;
+//
 }
 
 .sac-img {
-  width: 340px;
+  width: auto;
   height: auto;
+
 }
 
 /* Section arrondie orange */

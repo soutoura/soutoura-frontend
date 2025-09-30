@@ -47,11 +47,23 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/welcome/welcome.page').then( m => m.WelcomePage)
   },
   {
+    path: 'welcometwo',
+    loadComponent: () => import('./pages/welcometwo/welcometwo.page').then( m => m.WelcometwoPage)
+  },
+  {
+    path: 'tableaudebord',
+    loadComponent: () => import('./pages/tableaudebord/tableaudebord.page').then( m => m.TableaudebordPage)
+  },
+  {
+    path: 'welcome3',
+    loadComponent: () => import('./pages/welcome3/welcome3.page').then( m => m.Welcome3Page)
+  },
+{
     path: 'passwordforget',
     loadComponent: () => import('./pages/passwordforget/passwordforget.page').then( m => m.PasswordforgetPage)
   },
-  
-  
+
+
 
 
 
