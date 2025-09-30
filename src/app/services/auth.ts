@@ -11,10 +11,10 @@ export class Auth {
 
   constructor(private http: HttpClient) { }
 
-  login(email: string, password: string): Observable<LoginResponse> {
+  login(email: string, motDePasse: string): Observable<LoginResponse> {
     console.log('Attempting login with email:', email);
-    console.log('Attempting login with password:', password);
-    const body = { email, password };
+    console.log('Attempting login with password:', motDePasse);
+    const body = { email, motDePasse };
     return this.http.post<LoginResponse>(this.apiUrl, body);
   }
 

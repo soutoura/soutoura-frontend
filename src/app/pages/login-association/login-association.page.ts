@@ -32,7 +32,8 @@ export class LoginAssociationPage implements OnInit {
   }
 
 
-  login() {
+  login() 
+  {
     if(!this.email || !this.password) {
       console.log('Veuillez remplir tous les champs.');
       return;
