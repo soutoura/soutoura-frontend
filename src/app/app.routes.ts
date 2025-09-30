@@ -7,7 +7,7 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'infos-school',
+    redirectTo: 'login',
     pathMatch: 'full',
   },
   {
@@ -19,6 +19,11 @@ export const routes: Routes = [
     path: 'menu',
     loadComponent: ()=> import("./components/menu/menu.component")
     .then(m=>m.MenuComponent)
+  },
+  {
+    path: 'searchbar',
+    loadComponent: ()=> import('./components/searchbar/searchbar.component')
+    .then(m=> m.SearchbarComponent)
   },
   {
     path: 'login',
@@ -62,11 +67,6 @@ export const routes: Routes = [
     path: 'passwordforget',
     loadComponent: () => import('./pages/passwordforget/passwordforget.page').then( m => m.PasswordforgetPage)
   },
-  {
-    path: 'infos-school',
-    loadComponent: () => import('./pages/infos-school/infos-school.page').then( m => m.InfosSchoolPage)
-  },
-
 
 
 
