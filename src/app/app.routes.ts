@@ -1,4 +1,6 @@
 import { Routes } from '@angular/router';
+import { LoginAssociationPage } from './pages/login-association/login-association.page';
+import { DemarragePage } from './pages/demarrage/demarrage.page';
 
 export const routes: Routes = [
   {
@@ -26,5 +28,12 @@ export const routes: Routes = [
     path: 'welcome',
     loadComponent: () => import('./pages/welcome/welcome.page').then( m => m.WelcomePage)
   },
-
+  {
+    path: 'login-association',
+    loadComponent: () => import('./pages/login-association/login-association.page').then( m => m.LoginAssociationPage)
+  },
+  {
+    path: 'login-ass',
+    component: DemarragePage
+  },
 ];

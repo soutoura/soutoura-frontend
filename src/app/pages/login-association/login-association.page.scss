@@ -1,0 +1,145 @@
+ion-content {
+  --background: #f0f2f5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 40px auto;
+
+  .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #001f3f;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+    }
+  }
+
+  // Style commun pour tous les "inputs"
+  .input-item {
+    border-radius: 25px;
+    margin: 8px 0;
+    padding: 0 15px;
+    background: #fff;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    border: 1.5px solid #000;
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+
+    ion-icon {
+      color: #ff7f2a;
+      margin-right: 10px;
+      font-size: 1.2em;
+    }
+  }
+
+  // Conteneur spécifique pour le bouton Google
+  .google-btn-container {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    &:active {
+      background: #f8f8f8;
+      transform: scale(0.98);
+    }
+
+    .google-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 12px;
+    }
+
+    // Style pour l'image PNG si vous utilisez cette option
+    img.google-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 12px;
+    }
+
+    .google-text {
+      flex: 1;
+      text-align: center;
+      color: #000;
+      font-weight: 500;
+    }
+  }
+
+  .separator {
+    margin: 15px 0;
+    color: #777;
+    font-size: 0.9rem;
+    position: relative;
+    
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 40%;
+      height: 1px;
+      background: #ddd;
+    }
+    
+    &::before {
+      left: 0;
+    }
+    
+    &::after {
+      right: 0;
+    }
+  }
+
+  .forgot-password {
+    text-align: right;
+    font-size: 0.9rem;
+    margin: 5px 0 15px;
+    color: #007bff;
+    cursor: pointer;
+  }
+
+  .login-btn {
+    border-radius: 25px;
+    margin: 15px 0;
+    background: linear-gradient(to right, #001f3f, #ff7f2a);
+    color: white;
+    font-weight: 500;
+    height: 50px;
+  }
+
+  .register {
+    font-size: 0.9rem;
+
+    a {
+      color: #007bff;
+      cursor: pointer;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
