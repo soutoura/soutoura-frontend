@@ -1,13 +1,56 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-title></ion-title>
   </ion-toolbar>
 </ion-header>
+  <div class="container">
+  <img src="assets/Group 637 (1).png" alt="Image" class="image-haut-droite">
+</div>
+<ion-content class="ion-padding-top">
+  <h2>Se connecter</h2>
+  <div class="logo-container">
+    <ion-img src="assets/Logo-soutoura.png"
+    alt="logo"
+    ></ion-img>
+  </div>
+  <div class="login-container">
+      
+      <ion-button   class="google-btn" expand="block"
+   (click)="loginWithGoogle()">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">login</ion-title>
-    </ion-toolbar>
-  </ion-header>
+     <img src="assets/google-logo.png" alt="Google" class="google-logo" />
+
+    
+    Connectez-vous avec Google
+  </ion-button>
+
+  <p style="font-weight: bold; font-size: 1.2em;">Ou</p>
+
+  <ion-item>
+    <ion-icon slot="start" name="mail-outline"  class="icons">
+
+    </ion-icon>
+    <ion-input type="email" [(ngModel)]="email" placeholder="Saisissez votre email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon slot="start" name="lock-closed-outline"
+      class="icons"></ion-icon>
+    <ion-input type="password" [(ngModel)]="password" placeholder="Saisissez votre mot de passe"></ion-input>
+    <ion-icon slot="end" name="eye-off-outline"  class="icons"></ion-icon>
+  </ion-item>
+  <p class="password-forget"><a (click)="createAccount()">Mot de passe oublié?</a></p>
+
+  <ion-button expand="block" (click)="login()" class="login">
+    Se connecter
+  </ion-button>
+
+  <p class="signup-text">Nouveau ici ? <a (click)="createAccount()">Créer un compte</a></p>
+  </div>
+
+ 
+
 </ion-content>
+ <div class="container_2">
+  <img src="assets/Group 967 (1).png" alt="Image" class="image-bas-gauche">
+</div>
