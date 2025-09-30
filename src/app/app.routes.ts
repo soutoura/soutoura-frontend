@@ -7,7 +7,7 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'demarrage',
+    redirectTo: 'welcometwo',
     pathMatch: 'full',
   },
   {
@@ -33,6 +33,10 @@ export const routes: Routes = [
   {
     path: 'tableaudebord',
     loadComponent: () => import('./pages/tableaudebord/tableaudebord.page').then( m => m.TableaudebordPage)
+  },
+  {
+    path: 'welcome3',
+    loadComponent: () => import('./pages/welcome3/welcome3.page').then( m => m.Welcome3Page)
   },
 
 ];

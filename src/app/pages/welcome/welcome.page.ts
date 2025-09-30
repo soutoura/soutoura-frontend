@@ -1,18 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar,  IonIcon} from '@ionic/angular/standalone';
-
+import { IonContent,IonIcon} from '@ionic/angular/standalone';
+import {
+  mailOutline, eyeOffOutline, lockClosedOutline,
+  lockClosed, logoGoogle, arrowForwardOutline, checkmarkOutline } from 'ionicons/icons';
+import {
+  addIcons
+} from "ionicons";
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.page.html',
   styleUrls: ['./welcome.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule ,  IonIcon]
+  imports: [IonContent, CommonModule, FormsModule ,  IonIcon]
 })
 export class WelcomePage implements OnInit {
 
-  constructor() { }
+  constructor() {
+    addIcons({arrowForwardOutline,checkmarkOutline,logoGoogle,mailOutline,lockClosedOutline,eyeOffOutline,lockClosed});
+  }
 
   ngOnInit() {
   }
