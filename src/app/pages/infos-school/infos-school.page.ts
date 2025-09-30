@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar , IonIcon, IonButtons } from '@ionic/angular/standalone';
+import { IonContent,IonIcon, } from '@ionic/angular/standalone';
 import { IonicModule } from '@ionic/angular';
 import { NavController } from '@ionic/angular';
 import { MenuComponent } from "src/app/components/menu/menu.component";
@@ -11,7 +11,7 @@ import { HeaderComponent } from "src/app/components/header/header.component";
   templateUrl: './infos-school.page.html',
   styleUrls: ['./infos-school.page.scss'],
   standalone: true,
-  imports: [IonButtons, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonIcon, IonicModule, MenuComponent, HeaderComponent]
+  imports: [IonContent, CommonModule, FormsModule, IonIcon, IonicModule, MenuComponent, HeaderComponent]
 })
 export class InfosSchoolPage implements OnInit {
 

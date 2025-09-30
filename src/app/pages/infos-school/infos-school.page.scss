@@ -12,8 +12,12 @@ ion-content{
   --overflow: auto;
 }
 .content-container {
+  height: auto;
+  display: flex;
   padding: 16px;
-  background: var(--ion-background-color);
+  // background: var(--ion-background-color);
+  flex-direction: column;
+
 }
 
 .school-image {
@@ -29,25 +33,27 @@ ion-content{
   .info-title {
     font-size: 1.4rem;
     font-weight: 600;
-    margin-bottom: 16px;
-    color: var(--ion-color-dark);
+    margin-bottom: 18px;
+    color:black;
     line-height: 1.3;
   }
 }
 
 .info-box {
-  background: var(--info-box-background);
-  border-radius: var(--border-radius);
+  // background: var(--info-box-background);
+  // border-radius: var(--border-radius);
   padding: 20px;
   margin-bottom: 24px;
-  box-shadow: var(--card-shadow);
+  // box-shadow: var(--card-shadow);
 
   .description {
-    line-height: 1.6;
-    color: var(--ion-color-medium);
-    margin-bottom: 24px;
-    font-size: 0.95rem;
+    line-height: 1.4;
+    color: black;
+    margin-bottom: 60px;
+    font-size: 16.5px;
     text-align: justify;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -64,7 +70,7 @@ ion-content{
     margin-bottom: 20px;
 
     &:last-child {
-      margin-bottom: 0;
+      margin-bottom: -1;
     }
 
     ion-icon {
@@ -105,7 +111,9 @@ ion-content{
     --padding-top: 18px;
     --padding-bottom: 18px;
     --box-shadow: 0 4px 12px rgba(var(--ion-color-primary-rgb), 0.3);
-    font-weight: 600;
+    background: #E67E22;
+    color: #f8f9fa;;
+    font-weight: 300;
     font-size: 1rem;
     text-transform: none;
     letter-spacing: 0.5px;
@@ -115,8 +123,6 @@ ion-content{
       margin-left: 8px;
     }
   }
-}
-
 // Styles pour la barre d'onglets
 ion-tab-bar {
   --background: var(--ion-color-light);
@@ -234,4 +240,5 @@ ion-tab-bar {
   .cta-button {
     --border-radius: 8px;
   }
+}
 }
