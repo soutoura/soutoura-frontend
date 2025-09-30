@@ -1,12 +1,23 @@
 ion-footer {
   position: fixed;
   bottom: 0;
-  --background: #063854;
+  background: #063854;
+   padding-bottom: env(safe-area-inset-bottom);
+  height: 70px;
+ 
 }
-.custom-footer{
-    width: 100%; 
-    background: #063854;
+ion-label{
+  color: rgba(255, 255, 255,  0.356);
+  font-size: 15px;
+  font-weight: 400;
+}
+ion-tab-bar.custom-footer {
+  height: 70px;
+  border-radius: 10px;
+  --background: transparent;
 }
 .icons{
-    color: #E67E22;
+   font-size:  30px;
+    color: rgba(255, 255, 255, 0.356);
 }
+

@@ -1,6 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { IonItem, IonContent, IonList, IonRouterOutlet, IonToolbar, IonHeader, IonTitle, IonMenu, IonIcon, IonImg, IonFooter, IonTabBar, IonApp, IonTabButton, IonLabel } from "@ionic/angular/standalone";
-
+import { 
+  mailOutline, eyeOffOutline, lockClosedOutline, 
+  lockClosed, logoGoogle, businessOutline,
+  peopleOutline,
+  homeOutline,
+  walletOutline, } from 'ionicons/icons';
+import {
+  addIcons
+} from "ionicons";
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -9,7 +17,11 @@ import { IonItem, IonContent, IonList, IonRouterOutlet, IonToolbar, IonHeader, I
 })
 export class MenuComponent  implements OnInit {
 
-  constructor() { }
+  constructor() {
+      addIcons({logoGoogle,mailOutline,lockClosedOutline,eyeOffOutline,lockClosed,
+        businessOutline, peopleOutline, homeOutline, walletOutline
+      });
+       }
 
   ngOnInit() {}
 
